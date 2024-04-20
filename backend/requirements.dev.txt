@@ -1,8 +1,0 @@
-autoflake
-black
-httpx
-isort
-pytest
-pytest-cov
-pytest-mock
-auth-lib-profcomff[testing]
