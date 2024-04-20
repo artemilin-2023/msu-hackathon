@@ -1,0 +1,17 @@
+[
+    {
+        "from": 5432,
+        "to": "database:5432",
+        "tls": false
+    },
+    {
+        "from": 9000,
+        "to": "minio-nginx:9000",
+        "tls": false
+    },
+    {
+        "from": 9001,
+        "to": "minio-nginx:9001",
+        "tls": false
+    }
+]
