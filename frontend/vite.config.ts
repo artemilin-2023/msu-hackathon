@@ -3,10 +3,12 @@ import postcssPresetEnv from 'postcss-preset-env';
 import stylelint from 'vite-plugin-stylelint';
 import svgLoader from 'vite-svg-loader';
 import vue from '@vitejs/plugin-vue';
+import vuetify from 'vite-plugin-vuetify';
 
 export default defineConfig({
 	plugins: [
 		vue(),
+		vuetify(),
 		svgLoader({
 			svgoConfig: {
 				floatPrecision: 2,

@@ -6,8 +6,19 @@ run: start
 start: stop
 	docker compose --file ./cicd/docker-compose.yml up --detach
 
+down: stop
 stop:
-	docker compose --file ./cicd/docker-compose.yml down
+	docker compose --file ./cicd/docker-compose.yml --file ./cicd/docker-compose.tailscale.yml down
+
+
+dev:
+	docker compose --file ./cicd/docker-compose.yml --file ./cicd/docker-compose.tailscale.yml up tailscale-sidecar --detach
+devdown:
+	docker compose --file ./cicd/docker-compose.yml --file ./cicd/docker-compose.tailscale.yml down tailscale-sidecar
+
+
+logs:
+	docker compose --file ./cicd/docker-compose.yml --file ./cicd/docker-compose.tailscale.yml logs -f
 
 configure:
 	cd backend && python3.11 -m venv venv

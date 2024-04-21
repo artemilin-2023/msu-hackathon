@@ -2,7 +2,6 @@ import axios, { AxiosResponse } from 'axios';
 import queryString from 'query-string';
 import { useProfileStore } from '../store';
 
-const profileStore = useProfileStore();
 type Path = `/${string}` | '';
 
 export class BaseApi {
@@ -13,6 +12,7 @@ export class BaseApi {
 	}
 
 	private ensureToken(): string | null {
+		const profileStore = useProfileStore();
 		if (!profileStore.token) profileStore.fromUrl();
 		if (profileStore.token) return profileStore.token;
 		return null;

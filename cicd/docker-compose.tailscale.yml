@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  tailscale-sidecar:
+    image: ghcr.io/4310v343k/tailscale-sidecar:eb4aef5
+    environment:
+      - TS_AUTHKEY=tskey-auth-kFd8Nhvs1j11CNTRL-Yz1B813KVjareqnRusrXiakVmikKoaede
+      - TS_SIDECAR_NAME=msu
+      - TS_SIDECAR_STATEDIR=/home/nonroot/tsstate
+    volumes:
+      - ${PWD}/cicd/ts-bindings.json:/etc/ts-sidecar/bindings.json
+    restart: unless-stopped
+    depends_on:
+      - database
+      - minio-nginx
