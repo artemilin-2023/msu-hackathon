@@ -91,17 +91,5 @@ namespace WorkShare.Application.Services
 
             await workRepository.DeleteAsync(id);
         }
-
-        public async Task<IReadOnlyCollection<Work>> GetAllByQueryAsync(string query)
-        {
-            var works = workRepository.GetAll();
-
-            // Боже, какой же это ужас.......
-            return works.Where(w 
-                => w.Name.Contains(query) 
-                || w.Hierarchy.WorkType.Contains(query)
-                || w.Hierarchy.Subject.Contains(query) 
-                || w.Files.Select(f => f.Contains(query)).Count() > 0).ToList().AsReadOnly();
-        }
     }
 }

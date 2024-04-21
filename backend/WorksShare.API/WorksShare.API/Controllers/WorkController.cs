@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
 using WorkShare.Application.Services;
 using WorksShare.API.Contracts;
@@ -58,16 +57,6 @@ namespace WorksShare.API.Controllers
             return Results.Ok(result);
         }
 
-        [HttpGet("search")]
-        public async Task<IResult> GetByQuery([FromQuery] string query)
-        {
-            if (!ModelState.IsValid)
-                return Results.BadRequest();
-
-            var result = await workServices.GetAllByQueryAsync(query);
-            return Results.Ok(result);
-        }
-
         [HttpDelete("{id}")]
         public async Task<IResult> Delete([Required] Guid id)
         {
@@ -81,6 +70,5 @@ namespace WorksShare.API.Controllers
             await workServices.RemoveAsync(id);
             return Results.Ok();
         }
-
     }
 }
