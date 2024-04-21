@@ -1,7 +1,5 @@
-import { RefSymbol } from '@vue/reactivity';
 import { defineStore } from 'pinia';
 import { ref } from 'vue';
-import { useRouter } from 'vue-router';
 
 export const useProfileStore = defineStore('profile', () => {
 	const id = ref<number | null>(null);

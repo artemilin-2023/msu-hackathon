@@ -2,6 +2,7 @@ import { RouteRecordRaw, createRouter, createWebHistory } from 'vue-router';
 import MainPage from './pages/MainPage.vue';
 import SearchPage from './pages/SearchPage.vue';
 import UploadPage from './pages/UploadPage.vue';
+import MyWorksPage from './pages/MyWorksPage.vue';
 
 const routes: RouteRecordRaw[] = [
 	{
@@ -15,6 +16,10 @@ const routes: RouteRecordRaw[] = [
 	{
 		path: '/upload',
 		component: UploadPage,
+	},
+	{
+		path: '/my_works',
+		component: MyWorksPage,
 	},
 ];
 
