@@ -17,6 +17,9 @@ namespace WorkShare.Application.Services
 
         public async Task<bool> HasAccessAsync(string token, Guid workId)
         {
+            if (string.IsNullOrEmpty(token))
+                return false;
+
             var userId = await authProvider.GetUserIdAsync(token);
             var work = await workRepository.GetAsync(workId);
 

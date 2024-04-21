@@ -9,6 +9,7 @@ using WorkShare.Infrastructure.Auth;
 using WorkShare.Infrastructure.Data;
 using WorkShare.Infrastructure.Data.Repositories;
 
+
 var builder = WebApplication.CreateBuilder(args);
 var services = builder.Services;
 var configuration = builder.Configuration;
@@ -63,6 +64,7 @@ services.AddScoped<WorkServices>();
 services.AddScoped<AccessService>();
 services.AddScoped<IAuthProvider, AuthProvider>();
 
+
 var app = builder.Build();
 
 var db = app.Services.GetService<DataContext>();
@@ -74,6 +76,7 @@ if (!bucketExists)
 {
     await minIO.MakeBucketAsync(new MakeBucketArgs().WithBucket("storage"));
 }
+
 
 app.UseAuthentication();
 app.UseAuthorization();

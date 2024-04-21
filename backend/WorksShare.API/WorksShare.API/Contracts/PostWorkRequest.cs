@@ -2,7 +2,10 @@
 
 namespace WorksShare.API.Contracts
 {
-    public record Hierarchy(int Course, string Subject, string WorkType);
+    public record Hierarchy(
+        [Required][Range(1, 6)] int Course, 
+        [Required] string Subject,
+        [Required] string WorkType);
 
     public record PostWorkRequest
     {

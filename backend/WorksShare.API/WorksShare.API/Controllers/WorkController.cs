@@ -26,6 +26,9 @@ namespace WorksShare.API.Controllers
                 return Results.BadRequest();
 
             var token = Request.Headers[AccessService.TokenName];
+            if ((string)token == null)
+                return Results.Forbid();
+
             var userId = await accessService.GetUserIdAsync(token);
 
             await workServices.AddWorkAsync(request.Hierarchy.Course, 
@@ -52,6 +55,16 @@ namespace WorksShare.API.Controllers
                 return Results.BadRequest();
 
             var result = await workServices.GetWorkAsync(id);
+            return Results.Ok(result);
+        }
+
+        [HttpGet("search")]
+        public async Task<IResult> GetByQuery([FromQuery] string query)
+        {
+            if (!ModelState.IsValid)
+                return Results.BadRequest();
+
+            var result = await workServices.GetAllByQueryAsync(query);
             return Results.Ok(result);
         }
 
