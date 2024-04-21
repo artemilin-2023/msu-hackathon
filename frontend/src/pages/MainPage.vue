@@ -1,91 +1,64 @@
 <script setup lang="ts">
-import { userdataUserApi, touchMeApi } from '../api';
-import { useProfileStore } from '../store';
-import { onMounted, ref } from 'vue';
+import landingImage from '../assets/landing.png';
+import landingImageBad from '../assets/landingCompressed.jpg';
+import { ref } from 'vue';
+import { useRouter } from 'vue-router';
+import { mdiHeart, mdiDuck } from '@mdi/js';
 
-const profileStore = useProfileStore();
+const { currentRoute, push } = useRouter();
 
-const showUserWarn = ref(false);
-const showClickWarn = ref(false);
-const clickResult = ref<number | null>(null);
+const searchText = ref(currentRoute.value?.query['q'] ?? '');
 
-onMounted(async () => {
-	// Get username
-	if (!profileStore.full_name && profileStore.id) {
-		const resp = await userdataUserApi.getById(profileStore.id);
-		if (resp.status != 200) {
-			showUserWarn.value = true;
-			return;
-		}
-		const data = resp.data;
-		if (!data || !data.items) {
-			showUserWarn.value = true;
-			return;
-		}
-		const nameItem = data.items.find(item => {
-			return item.category == 'Личная информация' && item.param == 'Полное имя';
-		});
-		if (!nameItem) {
-			showUserWarn.value = true;
-			return;
-		}
-		profileStore.full_name = nameItem?.value ?? null;
-	}
-
-	// Get touch data
-	const resp = await touchMeApi.getTouch();
-	if (resp.status != 200) {
-		showClickWarn.value = true;
-		return;
-	}
-	const data = resp.data;
-	if (!data || !data.count) {
-		showClickWarn.value = true;
-		return;
-	}
-	clickResult.value = +data.count;
-});
-
-const makeClick = async () => {
-	// Make touch
-	const resp = await touchMeApi.addTouch();
-	if (resp.status != 200) {
-		showClickWarn.value = true;
-		return;
-	}
-	const data = resp.data;
-	if (!data || !data.count) {
-		showClickWarn.value = true;
-		return;
-	}
-	clickResult.value = +data.count;
-};
-
-const location = document.location.origin + '/docs/';
+function fakeSearchFocused() {
+	push({
+		path: '/search',
+		query: currentRoute.value.query,
+	});
+}
 </script>
 
 <template>
-	<div>
-		<h1 class="text-h1">
-			Привет<span v-if="profileStore.full_name">, {{ profileStore.full_name }}</span
-			>!
-		</h1>
-		<p v-if="!profileStore.full_name">
-			Не удалось получить твое имя из
-			<a href="https://api.profcomff.com/?urls.primaryName=userdata">Userdata API</a>
-			=(
-		</p>
-		<p>Твой id: {{ profileStore.id }}</p>
-		<div>
-			<button @click="makeClick">Нажми чтобы увеличить каунтер</button>
-			<h2 v-if="clickResult">
-				В сумме ты кликнул эту кнопку <span>{{ clickResult }}</span> раз
-			</h2>
-		</div>
-		<div>
-			<p>
-				Документация к этому коду находится по адресу <a href="/docs/">{{ location }}</a>
-			</p>
-		</div>
+	<div style="position: relative; z-index: 1; min-height: 100vh">
+		<v-img :lazy-src="landingImageBad" :src="landingImage" cover height="100vh" class="tinted">
+			<v-container class="d-flex flex-column text-center w-100 h-100 overlay text-white header">
+				<span class="text-h3 text-md-h2 text-lg-h1 pt-16">Матроссинг</span>
+				<span class="text-h7 text-md-h6 text-lg-h5 pt-5">Студенческая программа для обмена материалами</span>
+				<div class="flex pt-8">
+					<v-text-field
+						v-model="searchText"
+						label="Найди что-нибудь!"
+						variant="solo"
+						density="compact"
+						@update:focused="fakeSearchFocused"
+					/>
+				</div>
+			</v-container>
+		</v-img>
 	</div>
+
+	<v-footer style="position: sticky; bottom: 0" class="justify-center" color="rgb(0,1,76)">
+		Made with
+		<v-icon :icon="mdiHeart" color="red" start end />
+		by
+		<v-icon :icon="mdiDuck" color="yellow" end />
+	</v-footer>
 </template>
+
+<style scoped>
+.header {
+	font-family: 'IBM Plex Sans', Roboto, sans-serif;
+}
+
+.overlay {
+	z-index: 1;
+	position: relative;
+}
+
+.tinted::before {
+	content: '';
+	display: block;
+	position: absolute;
+	inset: 0;
+	background-color: rgba(0 0 0 / 66%);
+}
+</style>
