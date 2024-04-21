@@ -1,0 +1,202 @@
+{
+    "openapi": "3.0.1",
+    "info": {
+      "title": "WorksShare.API",
+      "version": "1.0"
+    },
+    "paths": {
+      "/api/v1/works": {
+        "post": {
+          "tags": [
+            "Work"
+          ],
+          "requestBody": {
+            "content": {
+              "multipart/form-data": {
+                "schema": {
+                  "required": [
+                    "Files",
+                    "Name"
+                  ],
+                  "type": "object",
+                  "properties": {
+                    "Hierarchy.Course": {
+                      "type": "integer",
+                      "format": "int32"
+                    },
+                    "Hierarchy.Subject": {
+                      "type": "string"
+                    },
+                    "Hierarchy.WorkType": {
+                      "type": "string"
+                    },
+                    "Name": {
+                      "type": "string"
+                    },
+                    "Files": {
+                      "minItems": 1,
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "format": "binary"
+                      }
+                    }
+                  }
+                },
+                "encoding": {
+                  "Hierarchy.Course": {
+                    "style": "form"
+                  },
+                  "Hierarchy.Subject": {
+                    "style": "form"
+                  },
+                  "Hierarchy.WorkType": {
+                    "style": "form"
+                  },
+                  "Name": {
+                    "style": "form"
+                  },
+                  "Files": {
+                    "style": "form"
+                  }
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Success"
+            }
+          }
+        },
+        "get": {
+          "tags": [
+            "Work"
+          ],
+          "parameters": [
+            {
+              "name": "Course",
+              "in": "query",
+              "schema": {
+                "type": "integer",
+                "format": "int32"
+              }
+            },
+            {
+              "name": "Name",
+              "in": "query",
+              "schema": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "WorkType",
+              "in": "query",
+              "schema": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "Subject",
+              "in": "query",
+              "schema": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "Limit",
+              "in": "query",
+              "schema": {
+                "type": "integer",
+                "format": "int32"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Success"
+            }
+          }
+        }
+      },
+      "/api/v1/works/{id}": {
+        "get": {
+          "tags": [
+            "Work"
+          ],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true,
+              "schema": {
+                "type": "string",
+                "format": "uuid"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Success"
+            }
+          }
+        },
+        "delete": {
+          "tags": [
+            "Work"
+          ],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true,
+              "schema": {
+                "type": "string",
+                "format": "uuid"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Success"
+            }
+          }
+        }
+      },
+      "/api/v1/works/search": {
+        "get": {
+          "tags": [
+            "Work"
+          ],
+          "parameters": [
+            {
+              "name": "query",
+              "in": "query",
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Success"
+            }
+          }
+        }
+      }
+    },
+    "components": {
+      "securitySchemes": {
+        "Bearer": {
+          "type": "apiKey",
+          "name": "Authorization",
+          "in": "header"
+        }
+      }
+    },
+    "security": [
+      {
+        "Bearer": [ ]
+      }
+    ]
+  }
