@@ -1,0 +1,312 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Жанна\\OneDrive\\Рабочий стол\\msu-hack\\backend\\WorksShare.API\\WorksShare.API\\WorksShare.API.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Жанна\\OneDrive\\Рабочий стол\\msu-hack\\backend\\WorksShare.API\\WorkShare.Application\\WorkShare.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Жанна\\OneDrive\\Рабочий стол\\msu-hack\\backend\\WorksShare.API\\WorkShare.Application\\WorkShare.Application.csproj",
+        "projectName": "WorkShare.Application",
+        "projectPath": "C:\\Users\\Жанна\\OneDrive\\Рабочий стол\\msu-hack\\backend\\WorksShare.API\\WorkShare.Application\\WorkShare.Application.csproj",
+        "packagesPath": "C:\\Users\\Жанна\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Жанна\\OneDrive\\Рабочий стол\\msu-hack\\backend\\WorksShare.API\\WorkShare.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Жанна\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\Жанна\\OneDrive\\Рабочий стол\\msu-hack\\backend\\WorksShare.API\\WorkShare.Domain\\WorkShare.Domain.csproj": {
+                "projectPath": "C:\\Users\\Жанна\\OneDrive\\Рабочий стол\\msu-hack\\backend\\WorksShare.API\\WorkShare.Domain\\WorkShare.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Жанна\\OneDrive\\Рабочий стол\\msu-hack\\backend\\WorksShare.API\\WorkShare.Domain\\WorkShare.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Жанна\\OneDrive\\Рабочий стол\\msu-hack\\backend\\WorksShare.API\\WorkShare.Domain\\WorkShare.Domain.csproj",
+        "projectName": "WorkShare.Domain",
+        "projectPath": "C:\\Users\\Жанна\\OneDrive\\Рабочий стол\\msu-hack\\backend\\WorksShare.API\\WorkShare.Domain\\WorkShare.Domain.csproj",
+        "packagesPath": "C:\\Users\\Жанна\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Жанна\\OneDrive\\Рабочий стол\\msu-hack\\backend\\WorksShare.API\\WorkShare.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Жанна\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Жанна\\OneDrive\\Рабочий стол\\msu-hack\\backend\\WorksShare.API\\WorkShare.Infrastructure\\WorkShare.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Жанна\\OneDrive\\Рабочий стол\\msu-hack\\backend\\WorksShare.API\\WorkShare.Infrastructure\\WorkShare.Infrastructure.csproj",
+        "projectName": "WorkShare.Infrastructure",
+        "projectPath": "C:\\Users\\Жанна\\OneDrive\\Рабочий стол\\msu-hack\\backend\\WorksShare.API\\WorkShare.Infrastructure\\WorkShare.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Жанна\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Жанна\\OneDrive\\Рабочий стол\\msu-hack\\backend\\WorksShare.API\\WorkShare.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Жанна\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\Жанна\\OneDrive\\Рабочий стол\\msu-hack\\backend\\WorksShare.API\\WorkShare.Application\\WorkShare.Application.csproj": {
+                "projectPath": "C:\\Users\\Жанна\\OneDrive\\Рабочий стол\\msu-hack\\backend\\WorksShare.API\\WorkShare.Application\\WorkShare.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.18, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.18, )"
+            },
+            "Minio": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[110.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Жанна\\OneDrive\\Рабочий стол\\msu-hack\\backend\\WorksShare.API\\WorksShare.API\\WorksShare.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Жанна\\OneDrive\\Рабочий стол\\msu-hack\\backend\\WorksShare.API\\WorksShare.API\\WorksShare.API.csproj",
+        "projectName": "WorksShare.API",
+        "projectPath": "C:\\Users\\Жанна\\OneDrive\\Рабочий стол\\msu-hack\\backend\\WorksShare.API\\WorksShare.API\\WorksShare.API.csproj",
+        "packagesPath": "C:\\Users\\Жанна\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Жанна\\OneDrive\\Рабочий стол\\msu-hack\\backend\\WorksShare.API\\WorksShare.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Жанна\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\Жанна\\OneDrive\\Рабочий стол\\msu-hack\\backend\\WorksShare.API\\WorkShare.Application\\WorkShare.Application.csproj": {
+                "projectPath": "C:\\Users\\Жанна\\OneDrive\\Рабочий стол\\msu-hack\\backend\\WorksShare.API\\WorkShare.Application\\WorkShare.Application.csproj"
+              },
+              "C:\\Users\\Жанна\\OneDrive\\Рабочий стол\\msu-hack\\backend\\WorksShare.API\\WorkShare.Infrastructure\\WorkShare.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Жанна\\OneDrive\\Рабочий стол\\msu-hack\\backend\\WorksShare.API\\WorkShare.Infrastructure\\WorkShare.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[7.0.18, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.18, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.18, )"
+            },
+            "Minio": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
