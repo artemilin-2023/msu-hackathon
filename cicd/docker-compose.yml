@@ -23,6 +23,12 @@ services:
   #   ports:
   #     - 80:80
 
+  backend:
+    build:
+      dockerfile: ../backend/WorkShare/Dockerfile
+    ports:
+      - 8080:8080
+
   database:
     image: postgres:16
     environment:
