@@ -1,0 +1,15 @@
+C:\Users\Жанна\OneDrive\Рабочий стол\msu-hack\backend\WorksShare.API\WorkShare.Application\bin\Debug\net7.0\WorkShare.Application.deps.json
+C:\Users\Жанна\OneDrive\Рабочий стол\msu-hack\backend\WorksShare.API\WorkShare.Application\bin\Debug\net7.0\WorkShare.Application.dll
+C:\Users\Жанна\OneDrive\Рабочий стол\msu-hack\backend\WorksShare.API\WorkShare.Application\bin\Debug\net7.0\WorkShare.Application.pdb
+C:\Users\Жанна\OneDrive\Рабочий стол\msu-hack\backend\WorksShare.API\WorkShare.Application\bin\Debug\net7.0\WorkShare.Domain.dll
+C:\Users\Жанна\OneDrive\Рабочий стол\msu-hack\backend\WorksShare.API\WorkShare.Application\bin\Debug\net7.0\WorkShare.Domain.pdb
+C:\Users\Жанна\OneDrive\Рабочий стол\msu-hack\backend\WorksShare.API\WorkShare.Application\obj\Debug\net7.0\WorkShare.Application.csproj.AssemblyReference.cache
+C:\Users\Жанна\OneDrive\Рабочий стол\msu-hack\backend\WorksShare.API\WorkShare.Application\obj\Debug\net7.0\WorkShare.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Жанна\OneDrive\Рабочий стол\msu-hack\backend\WorksShare.API\WorkShare.Application\obj\Debug\net7.0\WorkShare.Application.AssemblyInfoInputs.cache
+C:\Users\Жанна\OneDrive\Рабочий стол\msu-hack\backend\WorksShare.API\WorkShare.Application\obj\Debug\net7.0\WorkShare.Application.AssemblyInfo.cs
+C:\Users\Жанна\OneDrive\Рабочий стол\msu-hack\backend\WorksShare.API\WorkShare.Application\obj\Debug\net7.0\WorkShare.Application.csproj.CoreCompileInputs.cache
+C:\Users\Жанна\OneDrive\Рабочий стол\msu-hack\backend\WorksShare.API\WorkShare.Application\obj\Debug\net7.0\WorkShare.Application.dll
+C:\Users\Жанна\OneDrive\Рабочий стол\msu-hack\backend\WorksShare.API\WorkShare.Application\obj\Debug\net7.0\refint\WorkShare.Application.dll
+C:\Users\Жанна\OneDrive\Рабочий стол\msu-hack\backend\WorksShare.API\WorkShare.Application\obj\Debug\net7.0\WorkShare.Application.pdb
+C:\Users\Жанна\OneDrive\Рабочий стол\msu-hack\backend\WorksShare.API\WorkShare.Application\obj\Debug\net7.0\ref\WorkShare.Application.dll
+C:\Users\Жанна\OneDrive\Рабочий стол\msu-hack\backend\WorksShare.API\WorkShare.Application\obj\Debug\net7.0\WorkShare.Application.csproj.CopyComplete

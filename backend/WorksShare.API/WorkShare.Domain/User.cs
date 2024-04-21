@@ -2,10 +2,10 @@
 {
     public class User
     {
-        public Guid Id { get; private set; }
+        public int Id { get; private set; }
         public string Name { get; private set; }
 
-        public User(Guid id, string name)
+        public User(int id, string name)
         {
             if (string.IsNullOrEmpty(name)) throw new ArgumentNullException("name");
 

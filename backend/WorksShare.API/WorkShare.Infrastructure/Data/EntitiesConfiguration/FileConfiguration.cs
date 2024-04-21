@@ -10,7 +10,7 @@ namespace WorkShare.Infrastructure.Data.EntitiesConfiguration
         {
             builder.HasKey(f => f.Id);
 
-            builder.Property(f => f.File).IsRequired();
+            builder.Property(f => f.Path).IsRequired();
 
             builder.HasOne(f => f.WorkEntity)
                    .WithMany(f => f.Files);

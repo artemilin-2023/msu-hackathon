@@ -2,7 +2,7 @@
 {
     internal class FileEnity : BaseEntity
     {
-        public string File { get; set; }
+        public string Path { get; set; }
         public WorkEntity WorkEntity { get; set; }
     }
 }

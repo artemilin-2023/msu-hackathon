@@ -43,6 +43,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -167,6 +173,18 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.18, )"
+            },
+            "Minio": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[110.2.0, )"
             }
           },
           "imports": [

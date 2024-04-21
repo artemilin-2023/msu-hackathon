@@ -1,8 +1,8 @@
 ﻿namespace WorkShare.Infrastructure.Data.Entities
 {
-    internal class UserEntity : BaseEntity
+    internal class UserEntity
     {
+        public int Id { get; set; }
         public string Name { get; set; }
-        public List<WorkEntity> WorkEntities { get; set; }
     }
 }

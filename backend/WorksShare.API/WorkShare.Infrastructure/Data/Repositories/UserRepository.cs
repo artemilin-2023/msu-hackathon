@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using WorkShare.Application.Abstracts;
 using WorkShare.Domain;
-using WorkShare.Infrastructure.Data.Entities;
 using WorkShare.Infrastructure.Data.Mappers;
 
 namespace WorkShare.Infrastructure.Data.Repositories
@@ -22,14 +21,14 @@ namespace WorkShare.Infrastructure.Data.Repositories
             await database.SaveChangesAsync();
         }
 
-        public async Task DeleteAsync(Guid userId)
+        public async Task DeleteAsync(int userId)
         {
             var entity = await database.Users.FirstAsync(u => u.Id == userId);
             database.Users.Remove(entity);
             await database.SaveChangesAsync();
         }
 
-        public async Task<User?> GetAsync(Guid userId)
+        public async Task<User?> GetAsync(int userId)
         {
             var entity = await database.Users.FirstOrDefaultAsync(u => u.Id == userId);
             return entity?.Map();

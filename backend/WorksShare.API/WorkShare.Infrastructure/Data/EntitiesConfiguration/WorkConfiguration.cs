@@ -11,21 +11,11 @@ namespace WorkShare.Infrastructure.Data.EntitiesConfiguration
             builder.HasKey(w => w.Id);
 
             builder.Property(w => w.Name).IsRequired();
-            builder.Property(w => w.Description);
             builder.Property(w => w.Course).IsRequired();
             builder.Property(w => w.CreatedAt).IsRequired();
-
-            builder.HasOne(w => w.UserEntity)
-                   .WithMany(u => u.WorkEntities);
-
-            builder.HasOne(w => w.SubjectEntity)
-                   .WithMany(s => s.WorkEntities);
-
-            builder.HasOne(w => w.TaskSource)
-                   .WithMany(t => t.WorkEntities);
-
-            builder.HasOne(w => w.WorkTypeEntity)
-                   .WithMany(w => w.WorkEntities);
+            builder.Property(w => w.Subject).IsRequired();
+            builder.Property(w => w.WorkType).IsRequired();
+            builder.Property(w => w.UserId).IsRequired();
         }
     }
 }
