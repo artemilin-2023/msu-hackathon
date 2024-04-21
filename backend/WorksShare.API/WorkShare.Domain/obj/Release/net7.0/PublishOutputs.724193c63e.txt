@@ -1,0 +1,3 @@
+C:\app\WorkShare.Domain.dll
+C:\app\WorkShare.Domain.deps.json
+C:\app\WorkShare.Domain.pdb

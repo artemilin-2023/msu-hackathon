@@ -1,0 +1,12 @@
+C:\Users\Жанна\OneDrive\Рабочий стол\msu-hack\backend\WorksShare.API\WorkShare.Domain\bin\Release\net7.0\WorkShare.Domain.deps.json
+C:\Users\Жанна\OneDrive\Рабочий стол\msu-hack\backend\WorksShare.API\WorkShare.Domain\bin\Release\net7.0\WorkShare.Domain.dll
+C:\Users\Жанна\OneDrive\Рабочий стол\msu-hack\backend\WorksShare.API\WorkShare.Domain\bin\Release\net7.0\WorkShare.Domain.pdb
+C:\Users\Жанна\OneDrive\Рабочий стол\msu-hack\backend\WorksShare.API\WorkShare.Domain\obj\Release\net7.0\WorkShare.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Жанна\OneDrive\Рабочий стол\msu-hack\backend\WorksShare.API\WorkShare.Domain\obj\Release\net7.0\WorkShare.Domain.AssemblyInfoInputs.cache
+C:\Users\Жанна\OneDrive\Рабочий стол\msu-hack\backend\WorksShare.API\WorkShare.Domain\obj\Release\net7.0\WorkShare.Domain.AssemblyInfo.cs
+C:\Users\Жанна\OneDrive\Рабочий стол\msu-hack\backend\WorksShare.API\WorkShare.Domain\obj\Release\net7.0\WorkShare.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Жанна\OneDrive\Рабочий стол\msu-hack\backend\WorksShare.API\WorkShare.Domain\obj\Release\net7.0\WorkShare.Domain.sourcelink.json
+C:\Users\Жанна\OneDrive\Рабочий стол\msu-hack\backend\WorksShare.API\WorkShare.Domain\obj\Release\net7.0\WorkShare.Domain.dll
+C:\Users\Жанна\OneDrive\Рабочий стол\msu-hack\backend\WorksShare.API\WorkShare.Domain\obj\Release\net7.0\refint\WorkShare.Domain.dll
+C:\Users\Жанна\OneDrive\Рабочий стол\msu-hack\backend\WorksShare.API\WorkShare.Domain\obj\Release\net7.0\WorkShare.Domain.pdb
+C:\Users\Жанна\OneDrive\Рабочий стол\msu-hack\backend\WorksShare.API\WorkShare.Domain\obj\Release\net7.0\ref\WorkShare.Domain.dll

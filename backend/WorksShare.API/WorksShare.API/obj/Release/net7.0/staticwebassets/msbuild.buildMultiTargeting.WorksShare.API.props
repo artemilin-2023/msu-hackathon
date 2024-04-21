@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\WorksShare.API.props" />
+</Project>

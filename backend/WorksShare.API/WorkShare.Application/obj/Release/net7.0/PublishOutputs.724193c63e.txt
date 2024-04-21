@@ -1,0 +1,8 @@
+C:\app\WorkShare.Application.dll
+C:\app\WorkShare.Application.deps.json
+C:\app\WorkShare.Application.pdb
+C:\app\Microsoft.AspNetCore.Http.Features.dll
+C:\app\Microsoft.Extensions.Primitives.dll
+C:\app\System.IO.Pipelines.dll
+C:\app\WorkShare.Domain.dll
+C:\app\WorkShare.Domain.pdb
