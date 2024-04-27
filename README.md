@@ -61,17 +61,17 @@ Endpoint для получения массива сущностей Work.
 ```
 [
 	{
-	    "id": guid,
-	    "hierarchy": [
+		"id": guid,
+		"hierarchy": [
 			"course": int,
-		    "subject": string,
-		    "workType": string,
-	    ],
-	    "name": string,
-	    "createdAt": string,
-	    "files": [
-	      string
-	    ]
+			"subject": string,
+			"workType": string,
+		],
+		"name": string,
+		"createdAt": string,
+		"files": [
+			string
+		]
 	}
 ]
 ```
