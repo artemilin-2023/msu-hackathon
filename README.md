@@ -58,7 +58,7 @@ Endpoint для получения массива сущностей Work.
 ?Course=int&Name=string&WorkType=string&Subject=string&Limit=int
 ```
 #### Схема возвращаемых данных
-``` json
+```
 [
 	{
 	    "id": guid,
@@ -84,7 +84,7 @@ Endpoint для получения массива сущностей Work.
 Endpoint для получения конкретной сущности по ее guid.
 #### Схема возвращаемых данных
 
-``` json
+```
 {
 	"id": guid,
 	"hierarchy": [
