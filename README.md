@@ -37,7 +37,7 @@ form-data:
 "Hierarchy.Course=int"
 "Hierarchy.Subject=string"
 "Hierarchy.WorkType=string"
-"Name=name"
+"Name=string"
 "Files=@filename.png;type=image/png"
 ```
 #### Status codes
